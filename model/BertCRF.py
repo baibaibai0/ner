@@ -18,7 +18,7 @@ class BertCRF(nn.Module):
         self.bert = BertModel.from_pretrained(hyper['bert_path'])
         self.dropout1 = nn.Dropout(0.2)
         self.emission = nn.Linear(768, self.bio_len)
-        self.CRF = CRF(self.bio_len, batch_first=False)
+        self.CRF = CRF(self.bio_len)
 #         self.CRF = CRF(self.bio_len, batch_first=True)
 
     def forward(self, input_x, label):
