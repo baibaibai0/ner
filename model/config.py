@@ -7,7 +7,7 @@ hyper = {
     "learning_rate": 1e-3,
     "gpu_id": 0,
     "bert": True,
-    "bert_path": 'pretrained_models/bert-base-chinese',
+    "bert_path": 'bert-base-chinese',
     "train_path": 'data/train.json',
     "valid_path": 'data/dev.json',
     "output_train": 'output/train_ans.json',
